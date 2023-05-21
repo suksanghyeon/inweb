@@ -486,7 +486,7 @@
   const canvasImage = new Image();
 
   const currentFrame = index => (
-    `movie/${(index*4-3).toString().padStart(4, '0')}.png`
+    `${(index*4-3).toString().padStart(4, '0')}.png`
   )
 
   const preloadImages = () => {
