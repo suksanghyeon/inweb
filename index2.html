@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+<link href="//db.onlinewebfonts.com/c/1392b0e09b283a428f49882471060eb3?family=Birds+of+Paradise" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Document</title>
+    <style>
+        
+        *{
+            margin: 0 auto;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+            color: #fff;
+            scroll-behavior: smooth;
+            text-decoration: none;
+            list-style: none;
+        }
+        .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 200,
+        'GRAD' 0,
+        'opsz' 48;
+        font-size: 72px;
+        margin-right: 20px;
+        /* transform: rotate(30deg); */
+        cursor: pointer;
+        }
+        .hexagon{
+            transform: rotate(30deg);
+        }
+        .hexagon:hover{
+            font-variation-settings:
+        'FILL' 100;
+        }
+        .hexagon:hover .arrow{
+            color: #000;
+        }
+        .arrow{
+            position: absolute;
+            top: 14px;
+            left: 17px;
+            transform: rotate(-30deg);
+            font-size: 42px;
+        }
+
+        html {
+  /* height: 1000vh; */
+  background-color: black;
+}
+        .wrap{
+            width: 1920px;
+            overflow: hidden;
+            margin:calc(350vh + 150px) auto 0;
+
+        }
+        .introtxt_wrap{
+            width: 1600px;
+            height: 350vh;
+            /* background-color: aqua; */
+            padding-top: 0;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .introtxt{
+            width: 1600px;
+            height: 1080px;
+            /* background-color: aquamarine; */
+            position: sticky;
+            top: 0;
+        }
+        .cont{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            /* background-color: beige; */
+            justify-content: space-between;
+        }
+        
+        .cont1 .img1{
+            
+            width: 1200px;
+            height: 650px;
+            /* background-color: aqua; */
+            clip-path: polygon(0 0, 100% 0, 950px 100%, 0 100%);
+            background-position: center;
+            background-size: cover;
+            background-image: url(https://kr.imboldn.com/wp-content/uploads/2020/02/2015-Lamborghini-Veneno-Roadster-main.jpg);
+            margin: 0;
+        }
+        .cont1 .text1{
+            width: 600px;
+            margin-left: 80px;
+            
+        }
+        .cont2{
+            margin-bottom: 40px;
+        }
+        .cont2 .img2{
+            width: 860px;
+            height: 650px;
+            clip-path: polygon(250px 0, 100% 0, 100% 100%, 0 100%);
+            /* background-color: aqua; */
+            margin: 0 0 0 160px;
+            background-position: center;
+            background-size: cover;
+            background-image: url(https://www.cnet.com/a/img/resize/890681f5aa185ca7092f536ea596cc7b2862f4fe/hub/2013/03/06/3146ed70-f0e1-11e2-8c7c-d4ae52e62bcc/lambo_veneno01.jpg?auto=webp&width=1200)
+        }
+        .cont2 .text2{
+            /* margin-left: 320px; */
+            width: 600px;
+            margin-left: 160px;
+  
+        }
+        .cont3{
+            height: 750px;
+            margin-bottom: 40px;
+
+        }
+        .cont .img3{
+            width: 958px;
+            height: 650px;
+            /* background-color: rgba(255, 0, 0, 0.585); */
+            background-image: url(https://i.pinimg.com/originals/4a/01/32/4a0132f6a6dac96afbecebe52d135cb8.jpg);
+            background-position: center;
+            background-size: cover;
+            clip-path: polygon(0 0, 100% 0, 708px 100%, 0 100%);
+            margin: 100px 0 0 0;
+        }
+        .cont .img4{
+            width: 1129px;
+            height: 650px;
+            /* background-color: rgba(28, 72, 72, 0.358); */
+            margin:0 0 100px -240px;
+            clip-path: polygon(250px 0, 100% 0, 100% 100%, 0 100%);
+            
+            background-image: url(https://www.supercars.net/blog/wp-content/uploads/2013/03/lamborghini_veneno_106.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .cont4{ 
+            justify-content: left;
+        }
+        .cont4 .img5{
+            width: 698px;
+            height: 650px;
+            /* background-color: aqua; */
+            background-position: center;
+            background-size: cover;
+            clip-path: polygon(0 0, 100% 0, 448px 100%, 0 100%);
+            background-image: url(https://jaydeeprose.files.wordpress.com/2016/02/23532-lamborghini-veneno-interior-1920x1200-car-wallpaper.jpg);
+            margin: 0;
+        }
+        .cont4 .text3{
+            width: 900px;
+            margin: 0;
+            margin-left: 160px;
+            margin-top: -100px;
+        }
+        h4{
+            font-size: 32px;
+            margin-bottom: 20px;
+            /* opacity: 0; */
+            transition: all ease .5s;
+        }
+        .text p{
+            line-height: 1.8;
+            font-size: 20px;
+            line-height: 2.5rem;
+            /* opacity: 0; */
+            transition: all ease .5s;
+        }
+        .text{
+            opacity: 0;
+            transition: all ease .5s;
+        }
+        .appear{
+            opacity: 1;
+            transition: all ease .5s;
+        }
+        .dd{
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 1600px;
+            height: 8000px;
+            background-color: rgba(127, 255, 212, 0.233);
+
+        }
+        .movie{
+            width: 1920px;
+            height:350vh;
+            /* background-image: url(untitled.png); */
+            /* background-position: center;
+            background-size: cover; */
+            margin-bottom: 150px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            will-change: contents;
+            
+        }
+      
+        .title{
+            z-index: 100    ;
+            display: block;
+            font-size: 320px;
+            text-align: center;
+            display: flex;
+            padding-top: 10%;
+            justify-content: center;
+            font-family: "Birds of Paradise";
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.515);
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: all ease .5s;
+            pointer-events: none;
+        }
+        h1{
+            font-size: 120px;
+            color: #fff;
+            letter-spacing:-5px;
+            padding-top: 10px;
+            /* padding-left: 150px; */
+            line-height: 1;
+            /* position: fixed; */
+            /* background-color: blue; */
+            opacity: 0;
+            transition: all ease .6s;
+
+        }
+        h2{
+            font-size: 40px;
+            color: #fff;
+            padding-top: 150px;
+            /* padding-left: 150px; */
+            /* position: absolute; */
+            opacity: 0;
+            transition: all ease .6s;
+        }
+        .movie_txt{
+            display: flex;
+            align-items: end;
+            justify-content: space-between;
+            color: #fff;
+            width: 1600px;
+            margin-top: 520px;
+            opacity: 0;
+            transition: all ease .6s;
+        }
+        .info{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #fff;
+            width: 580px;
+            margin: 0;
+            /* opacity: 0; */
+            /* transition: all ease .6s; */
+        }
+        .create{
+            margin: 0;
+        }
+        .create p{
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .create span{
+            display: block;
+            font-size: 40px;
+            font-weight: 300;
+        }
+        .info div{
+            margin: 0;
+        }
+        .info div b{
+            font-size: 20px;
+            font-weight: 500;
+
+        }
+        .info div p{
+            font-size: 20px;
+            margin-top: 5px;
+            
+        }
+
+        canvas {
+            will-change: contents;
+            position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    
+            position: sticky;
+            /* left: 100%; */
+            top: 0px;
+            max-height: 1080px;
+            max-width: 1920px;
+            /* transform: translate(-50%, -50%); */
+            }
+
+
+
+        header{
+            width: 100vw;
+            height: 80px;
+            background-color: #181818;
+            position: fixed;
+            z-index: 90;
+            top: 0;
+            left: 0;
+            
+            opacity: 0;
+            transition: all ease .5s;
+        }
+        .headerwrap{
+            width: 1600px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header .menu{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 600px;
+            margin-left: 20px;
+        }
+        .submenu{
+            margin-right: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 350px;
+        }
+        .iconmenu{
+            padding-top: 8px;
+            width: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; 
+            margin: 0;
+        }
+        .icon{
+            font-size: 28px;
+        }
+        .logo{
+            width: 60px;
+            height: 60px;
+            display: block;
+            /* background-color: #fff; */
+            text-align: center;
+            margin: 0;
+        }
+        .logo img{
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">Lamborghini <br>Veneno</div>
+    <header>
+        <div class="headerwrap">
+        <a href="" class="logo"><img src="https://i.postimg.cc/CL32F4jG/pngwing-com-15.png" alt=""></a>
+        <ul class="menu">
+            <li><a href="">MODELS</a></li>
+            <li><a href="">CUSTOM SOLUTIONS</a></li>
+            <li><a href="">OWNERSHIP</a></li>
+            <li><a href="">MOTORSPORT</a></li>
+        </ul>
+        <ul class="submenu">
+            <li><a href="">DEALERSHIPS</a></li>
+            <li><a href="">MUSEUM</a></li>
+            <li><a href="">STORE</a></li>
+        </ul>
+        <ul class="iconmenu">
+            <li><a href=""><span class="material-symbols-outlined icon">forum</span></a></li>
+            <li><a href=""><span class="material-symbols-outlined icon">search</span></a></li>
+            <li><a href=""><span class="material-symbols-outlined icon">menu</span></a></li>
+        </ul>
+    </div>
+    </header>
+    <div class="movie">
+        
+        <canvas id="veneno">
+            
+        </canvas>
+    </div>
+    <div class="introtxt_wrap">
+        <div class="introtxt">
+        
+        <h2>VENENO</h2>
+        <h1>FOR BAR RAISERS <br>ONLY</h1>
+        <div class="movie_txt">
+        <div class="info">
+            <div class="info1">
+                <b>POWER(HP)/POWER(KW)</b>
+                <p>740 HP/552 kW</p>
+            </div>
+            <div class="info2">
+                <b>MAX.SPEED</b>
+                <p>355km/h</p>
+            </div>
+            <div class="info3">
+                <b>0-100km/h</b>
+                <p>2.8s</p>
+            </div>
+        </div>
+        <span class="material-symbols-outlined hexagon">
+            hexagon
+            <span class="material-symbols-outlined arrow">
+                chevron_right
+                </span>
+            </span>
+        <div class="create">
+            <p>CONFIGURATION</p>
+            <span>Create your Veneno</span>
+        </div>
+    </div>
+</div>
+</div>
+    
+    <div class="wrap">
+        
+        <div class="cont cont1">
+            <div class="img1">
+            </div>
+            <div class="text text1">
+                <h4>OVERVIEW</h4>
+                <p>The Lamborghini Veneno (Spanish pronunciation: [beˈneno]) is a limited production high performance sports car manufactured by Italian automobile manufacturer Lamborghini. Based on the Lamborghini Aventador, the Veneno was developed to celebrate Lamborghini's 50th anniversary. It was introduced at the 2013 Geneva Motor Show. When introduced, it had a price of US$4,000,000, making it one of the most expensive production cars in the world.</p>
+            </div>    
+        </div>
+        <div class="cont cont2">
+            <div class="text text2">
+                <h4>EXTERIOR</h4>
+                <p>The Geneva show car is finished in a special metallic grey shade combined with clear carbon fiber and features an amazing looking ‘TriColore’ stripe running from the front over the doors into the massive, wide rear air intake however only three of these Lamborghini Veneno units will be built. One to be finished in red, a second one in white and the third one in green which happen to be the three shades used on the Italian flag mind you so what about this grey car then</p>
+            </div>
+            <div class="img2"></div>
+
+        </div>
+        <div class="cont cont3">
+            <div class="img3"></div>
+            <div class="img4"></div>
+        </div>
+        <div class="cont cont4">
+            <div class="img5"></div>
+            <div class="text text3">
+                <h4>INTERIOR</h4>
+                <p>The Lamborghini Veneno has a carbon fiber monocoque and sections of this chassis are visible on the central console and the sills, very nice and it just oozes race feeling from every angle, while the headliner and dashboard are covered in Carbon Skin mind you as much as the Veneno is a race car with a street license it still offers all safety measures to keep the driver and lucky passenger safe with airbags and ESP for instance.
+
+                    At first glance the dashboard cluster may look like an Aventador unit, but take a closer look and you’ll see the graphics are totally different, much more aggressive and Lamborghini even installed a G-Force indicator how cool is that? With all the special ‘gadgets’ inside like a triplet of switches on the central console hidden from view beneath three covers finished in the TriColore shades </p>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="dd"></div> -->
+
+
+    <script>
+        (function(){
+  "use strict";
+  
+  const html = document.documentElement;
+  const canvas = {
+    'element' : document.getElementById("veneno"),
+    'width' : 1920,
+    'height' : 1080,
+    'frameCount':400
+  }
+  const context = canvas.element.getContext("2d");
+  const canvasImage = new Image();
+
+  const currentFrame = index => (
+    `movie/${(index*4-3).toString().padStart(4, '0')}.png`
+  )
+
+  const preloadImages = () => {
+    for (let i = 1; i < canvas.frameCount; i++) {
+      const img = new Image();
+      img.src = currentFrame(i);
+    }
+  };
+
+  const updateImage = index => {
+    canvasImage.src = currentFrame(index);
+    context.drawImage(canvasImage, 0, 0);
+  }
+
+  window.addEventListener('DOMContentLoaded', () => {
+    canvas.element.width = canvas.width;
+    canvas.element.height = canvas.height;
+    canvasImage.src = currentFrame(1); 
+    canvasImage.onload=function(){
+      context.drawImage(canvasImage, 0, 0);
+    }
+    preloadImages();
+  });
+  
+  const text1=document.querySelectorAll(".text")
+  window.addEventListener('scroll', () => { 
+    const h1tag=document.querySelector("h1") 
+    const h2tag=document.querySelector("h2") 
+    const title=document.querySelector(".title")
+     
+    console.log(window.scrollY);
+
+    text1.forEach(text=>{
+        let texttop=text.getBoundingClientRect().top;
+        let textMid=texttop+text.getBoundingClientRect().height/2;
+        let windowMid=window.innerHeight/2;
+        if(Math.abs(windowMid-textMid)<250){
+            text.classList.add("appear")
+        }else{
+            text.classList.remove("appear")
+        }
+    })
+
+    if(window.scrollY>100){
+    title.style.opacity=0;
+    const headerItems = document.querySelectorAll('header');
+    headerItems.forEach(function(item) {
+      item.style.opacity = 1;
+    });
+    }else{
+        title.style.opacity=1;
+        const headerItems = document.querySelectorAll('header');
+    headerItems.forEach(function(item) {
+      item.style.opacity = 0;
+    });
+    }
+    if(window.scrollY>1300){
+    h1tag.style.opacity=1;
+    h2tag.style.opacity=1;
+    }else{
+        h1tag.style.opacity=0;
+        h2tag.style.opacity=0;
+    }
+    if (window.scrollY > 2100) {
+    const infoItems = document.querySelectorAll('.movie_txt');
+    infoItems.forEach(function(item) {
+      item.style.opacity = 1;
+    });
+  }else{
+    const infoItems = document.querySelectorAll('.movie_txt');
+    infoItems.forEach(function(item) {
+      item.style.opacity = 0;
+    });
+  }
+    const scrollTop = html.scrollTop;
+    const maxScrollTop = html.scrollHeight - window.innerHeight;
+    const scrollFraction = scrollTop / maxScrollTop;
+    const frameIndex = Math.min(
+      canvas.frameCount - 1,
+      Math.ceil(scrollFraction * canvas.frameCount)
+    );
+    requestAnimationFrame(() => updateImage(frameIndex + 1));
+  });
+})();
+
+
+
+
+    </script>
+</body>
+</html>
