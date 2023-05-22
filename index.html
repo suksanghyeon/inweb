@@ -378,6 +378,67 @@
         .logo img{
             height: 100%;
         }
+          footer{
+            width: 100%;
+            height: 346px;
+            background-color: #181818;
+            padding: 60px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .foot1{
+            width: 1600px;
+            margin: 0 auto;
+            /* background-color: aqua; */
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+        }
+        .footer_menu{
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            width: 930px;
+            flex-wrap: wrap;
+            margin: 0;
+        }
+        .footer_menu li{
+            margin: 0 40px 0 0px;
+            margin-top: 10px;
+        }
+        .footer_menu a{
+            font-size: 16px;
+            margin-left: 40px;
+            /* background-color: bisque; */
+            margin: 0;
+        }
+        
+        .sns{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0;
+        }
+        .sns i{
+            font-size: 24px;
+            margin-left: 20px;
+        }
+        .foot2{
+            width: 1600px;
+            margin: 0 auto;
+            /* background-color: aqua; */
+            line-height: 1.8;
+        }
+        .foot3{
+            width: 1600px;
+            margin: 0 auto;
+            
+        }
+        .foot3 p{
+            margin: 0;
+            font-size: 16px;    
+        }
     </style>
 </head>
 <body>
@@ -476,7 +537,34 @@
         </div>
     </div>
     <!-- <div class="dd"></div> -->
-
+    <footer>
+        <div class="foot1">
+            <ul class="footer_menu">
+                <li><a href="">COMPANY</a></li>
+                <li><a href="">CAREERS</a></li>
+                <li><a href="">CONTACT US</a></li>
+                <li><a href="">SUSTAINABILITY</a></li>
+                <li><a href="">MEDIA CENTER</a></li>
+                <li><a href="">PRIVACY & LEGAL</a></li>
+                <li><a href="">COOKIE SETTINGS</a></li>
+                <li><a href="">SITEMAP</a></li>
+                <li><a href="">NEWSLETTER</a></li>
+                <li><a href="">ACCESSIBILITY</a></li>
+            </ul>
+            <ul class="sns">
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+        </div>
+        <div class="foot2">
+            <p class="ip">The consumption and emissions values in the website refer to your geographical IP. This value might be unrealistic if you navigate using VPN or if the position of your Internet provider is imprecise. If you believe you are incorrectly geolocalized, contact your dealer to get valid consumption and emissions information in your area.</p>
+        </div>
+        <div class="foot3">
+            <p class="copyright">Copyright © 2023 Automobili Lamborghini S.p.A. a sole shareholder company part of Audi Group.
+                <br> All rights reserved. VAT no. IT 00591801204</p>
+        </div>
+    </footer>
 
     <script>
         (function(){
