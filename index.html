@@ -20,7 +20,7 @@
                 src:url('Birds\ of\ Paradise\ _PERSONAL\ USE\ ONLY.ttf') format('opentype');
             }
        
-        *{
+            *{
             margin: 0 auto;
             padding: 0;
             box-sizing: border-box;
@@ -60,18 +60,18 @@
         }
 
         html {
-         /* height: 1000vh; */
-         background-color: black;
-        }
+  /* height: 1000vh; */
+  background-color: black;
+}
         .wrap{
             width: 1920px;
             overflow: hidden;
-            margin:calc(350vh + 150px) auto 0;
+            margin:calc(400vh + 150px) auto 0;
 
         }
         .introtxt_wrap{
             width: 1600px;
-            height: 350vh;
+            height: 400vh;
             /* background-color: aqua; */
             padding-top: 0;
             position: absolute;
@@ -207,7 +207,7 @@
         }
         .movie{
             width: 1920px;
-            height:350vh;
+            height:400vh;
             /* background-image: url(untitled.png); */
             /* background-position: center;
             background-size: cover; */
@@ -216,7 +216,7 @@
             top: 0;
             left: 50%;
             transform: translateX(-50%);
-/*             will-change: contents; */
+            will-change: contents;
             
         }
       
@@ -308,7 +308,7 @@
         }
 
         canvas {
-/*             will-change: contents; */
+            will-change: contents;
             position: -webkit-sticky;
             position: -moz-sticky;
             position: -ms-sticky;
@@ -379,7 +379,8 @@
         .logo img{
             height: 100%;
         }
-          footer{
+
+        footer{
             width: 100%;
             height: 346px;
             background-color: #181818;
@@ -569,8 +570,7 @@
 
     <script>
         (function(){
-  "use strict";
-  
+
   const html = document.documentElement;
   const canvas = {
     'element' : document.getElementById("veneno"),
@@ -580,20 +580,31 @@
   }
   const context = canvas.element.getContext("2d");
   const canvasImage = new Image();
+  let a = 0;
+  
+  const currentFrame =  index=>(
 
-  const currentFrame = index => (
-    `${(index*4-3).toString().padStart(4, '0')}.png`
+    `movie/${(3*index-2).toString().padStart(4, '0')}.png`
   )
 
   const preloadImages = () => {
     for (let i = 1; i < canvas.frameCount; i++) {
       const img = new Image();
-      img.src = currentFrame(i);
+      
+      if(i > 135){
+        currentFrame(134)
+      }else{
+        img.src = currentFrame(i);
+      }
     }
   };
 
   const updateImage = index => {
+   if(index < 134){
     canvasImage.src = currentFrame(index);
+   }else{
+    canvasImage.src = currentFrame(134);
+   }
     context.drawImage(canvasImage, 0, 0);
   }
 
@@ -667,7 +678,6 @@
     requestAnimationFrame(() => updateImage(frameIndex + 1));
   });
 })();
-
 
 
 
