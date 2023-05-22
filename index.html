@@ -631,7 +631,7 @@
         let texttop=text.getBoundingClientRect().top;
         let textMid=texttop+text.getBoundingClientRect().height/2;
         let windowMid=window.innerHeight/2;
-        if(Math.abs(windowMid-textMid)<250){
+        if(Math.abs(windowMid-textMid)<350){
             text.classList.add("appear")
         }else{
             text.classList.remove("appear")
